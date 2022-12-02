@@ -150,6 +150,10 @@ const Messenger = () => {
      const inputHendle = (e) => {
           setNewMessage(e.target.value);
           if (e.key === "Enter" && !e.shiftKey) {
+               if (e.target.value === "" || e.shiftKey) {
+                    e.preventDefault()
+                    return
+               }
                /*  if (e.target.value === "" && !e.shiftKey.value === "") {
                      console.log("oi")
                 } */
@@ -162,14 +166,7 @@ const Messenger = () => {
 
 
 
-               if (newMessage !== "" && newMessage !== e.shiftKey) {
-                    dispatch(messageSend(data))
-
-               }
-
-
                dispatch(messageSend(data));
-
                // message + \n + message
                setNewMessage("");
           }
