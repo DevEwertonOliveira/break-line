@@ -18,6 +18,7 @@ const MessageSend = ({
             placeholder="Aa"
             className="form-control"
             value={newMessage}
+            wrap="soft"
           />
         </div>
       }

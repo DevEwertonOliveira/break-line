@@ -74,12 +74,13 @@
 
     .message-type {
         display: flex;
-        width: 70%;
-        height: 40px;
+        width: 100%;
+        height: 60px;
         background-color: #dfdfdf;
-        border-radius: 50px;
+        border-radius: 25px;
         border: none;
         align-items: center;
+        font-size: 12px;
 
 
         .form-control {
